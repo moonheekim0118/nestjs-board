@@ -16,6 +16,6 @@ export class BoardController {
     @Body('title') title: string,
     @Body('description') description: string,
   ): Board {
-    return this.boardService.createBoard(title, description);
+    return this.boardService.createPublicBoard(title, description);
   }
 }
